@@ -44,33 +44,33 @@ body {
     transform: rotate3d(0, 1, 0, 0deg);
 }
 .card__panel--front {
-    background: #FFFFFF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); 
+    background: #E3F2FD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E3F2FD, #90CAF9);  
+    background: linear-gradient(to bottom, #E3F2FD, #90CAF9); 
     /* background: radial-gradient(#e66465, #9198e5);     */
     z-index: 1;
 
     backface-visibility: hidden;
 }
 .card__panel--inside-left {
-    background: #FFFFFF;  /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6 );
+    background: #E3F2FD;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #E3F2FD, #90CAF9);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E3F2FD, #90CAF9 );
     /* border-right: 1px solid black ; */
     /* background: radial-gradient(circle at left, #e66465, #9198e5);    */
-    outline: 5px double skyblue;
+    outline: 5px double #FF7043;
     outline-offset: -1em;
     z-index: 0;
 
 }
 .card__panel--inside-right {
-    background: #FFFFFF;  /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    background: #E3F2FD;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #E3F2FD, #90CAF9);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E3F2FD, #90CAF9);
     /* border-left: 1px solid grey ; */
     /* background: radial-gradient(circle at left, #e66465, #9198e5);    */
     border-left: none;
-    outline: 5px double skyblue;
+    outline: 5px double #FF7043;
     outline-offset: -1em;
     z-index: -1;
 }
@@ -86,11 +86,11 @@ body {
     transform: rotate3d(0, 1, 0, -170deg);
 }
 
-#rotunda {
+#couple {
     width: 70%;
     border-radius: 100%; 
     transform: scaleX(-1);
-    outline: 5px double skyblue;
+    outline: 5px double #FF7043;
     outline-offset: 5px;
 }
 
@@ -114,7 +114,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    #rotunda {
+    #couple {
         visibility: hidden;
     }
 }

@@ -16,10 +16,10 @@ body {
     transition: all 0.2s ease;
 }
 .card {
-    max-width: 400px;
-    max-height: 600px;
-    width: 80vw;
-    height: 120vw;
+    max-width: 450px;
+    max-height: 675px;
+    width: 90vw;
+    height: 135vw;
     margin: auto;
     transform: rotateX(25deg);
     transform-style: preserve-3d;
@@ -97,15 +97,39 @@ body {
 .rightContent {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5em;
-    margin: 2em;
-    font-size: 1em;
+    margin: 1.5em;
+    padding: 0.5em;
+    font-size: 0.9em;
     text-align: left;
+    width: calc(100% - 4em);
+    max-width: calc(100% - 4em);
+    height: calc(100% - 4em);
+    max-height: calc(100% - 4em);
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+#sigHeader {
+    text-align: right;
+    margin-bottom: 0;
 }
 
 #sig {
     font-family: 'Water Brush', cursive;
     font-size: 1.5em;
     text-align: right;
+    margin-top: 0;
+}
+
+#postscript {
+    margin-top: auto;
+    font-style: italic;
+    font-size: 0.85em;
 }
 
 #sig::before {
@@ -137,9 +161,19 @@ h3 {
     }
 
     .rightContent {
-        margin: 2em;
-        font-size: 1.25em;
+        margin: 1.5em;
+        padding: 0.5em;
+        font-size: 1em;
         text-align: left;
+        width: calc(100% - 4em);
+        max-width: calc(100% - 4em);
+        height: calc(100% - 4em);
+        max-height: calc(100% - 4em);
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     h1 {

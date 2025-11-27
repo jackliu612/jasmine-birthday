@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Happy Birthday Jasmine!</title>
+    <link href="style.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+    <script src="scripts/circletype.min.js"></script>
+</head>
+<body onload="setup()">
+    <!-- <p>Click card to open</p> -->
+
+    <div class="card__container js-card-opener">
+      <div class="card">
+        <div class="card__panel card__panel--front">
+            <div id="frontDesign">
+                <h1 id="topText">Happy Birthday</h1>
+                <img id="cap" src="imgs/cap.png" alt="Graduation cap">
+                <h1 id = "bottomText">Jasmine!</h1>
+            </div>
+        </div>
+        <div class="card__panel card__panel--inside-left">
+            <img id="rotunda" src="imgs/rotunda.jpg" alt="Rotunda">
+        </div>
+        <div class="card__panel card__panel--inside-right">
+            <div class="rightContent">
+                <p>
+                    It wasn't that long ago when we were first years not quite sure what would await us in college. 
+                    Yet over the years, you found your way through the hectic course registrations, sleepness nights
+                    racing against deadlines, and the many many many technical difficulties with Zoom... 
+                    I'm glad that I was able to be part of your journey, and can't wait to see where the future will take you.
+                    Don't be a stranger and I hope to stay in touch!
+                </p>
+                <p id="sig">Jack Liu</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

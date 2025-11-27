@@ -1,0 +1,166 @@
+body {
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    text-align: center;
+  }
+.card__container {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1400px;
+    
+    transition: all 0.2s ease;
+}
+.card {
+    max-width: 400px;
+    max-height: 600px;
+    width: 80vw;
+    height: 120vw;
+    margin: auto;
+    transform: rotateX(25deg);
+    transform-style: preserve-3d;
+    
+    transition: all 1s ease;
+}
+.card__panel {
+    border: 1px solid grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    
+    transition: all 1s ease;
+    backface-visibility: visible;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    transform: rotate3d(0, 1, 0, 0deg);
+}
+.card__panel--front {
+    background: #FFFFFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); 
+    /* background: radial-gradient(#e66465, #9198e5);     */
+    z-index: 1;
+
+    backface-visibility: hidden;
+}
+.card__panel--inside-left {
+    background: #FFFFFF;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6 );
+    /* border-right: 1px solid black ; */
+    /* background: radial-gradient(circle at left, #e66465, #9198e5);    */
+    outline: 5px double skyblue;
+    outline-offset: -1em;
+    z-index: 0;
+
+}
+.card__panel--inside-right {
+    background: #FFFFFF;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    /* border-left: 1px solid grey ; */
+    /* background: radial-gradient(circle at left, #e66465, #9198e5);    */
+    border-left: none;
+    outline: 5px double skyblue;
+    outline-offset: -1em;
+    z-index: -1;
+}
+
+.open .card {
+    transform: rotateX(0deg);
+}
+
+.open .card__panel--front {
+    transform: rotate3d(0, 1, 0, -170deg);
+}
+.open .card__panel--inside-left {
+    transform: rotate3d(0, 1, 0, -170deg);
+}
+
+#rotunda {
+    width: 70%;
+    border-radius: 100%; 
+    transform: scaleX(-1);
+    outline: 5px double skyblue;
+    outline-offset: 5px;
+}
+
+.rightContent {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    margin: 2em;
+    font-size: 1em;
+    text-align: left;
+}
+
+#sig {
+    font-family: 'Water Brush', cursive;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+#sig::before {
+    font-family: 'Water Brush', cursive;
+    content: "—";
+}
+
+@media (max-width: 768px) {
+    #rotunda {
+        visibility: hidden;
+    }
+}
+
+h1 {
+    font-size: 2.75em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#cap {
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .open .card__container {
+        transform: translate(0%, -50%);
+    }
+
+    .rightContent {
+        margin: 2em;
+        font-size: 1.25em;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+
+    #cap {
+        width: 100%;
+    }
+}
+
+h1, h3 {
+    font-family: 'Water Brush', cursive;
+}
+
+img{
+    width:100%;
+    max-width:500px;
+    margin: -20%;
+}
